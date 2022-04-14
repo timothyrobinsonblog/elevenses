@@ -18,7 +18,7 @@ html {
 /*==============================
   NAVIGATION BAR
   ==============================*/
-.space-left {
+/* .space-left {
   width: 20%;
   flex-direction: column;
 }
@@ -28,9 +28,9 @@ html {
   margin: 0 20% 0 2vw;
 }
 
-.nav-logo {
+.nav-logo { */
   /* Scalable with min size of 22px. Used to be 26px. */
-  font-size: calc(1.375rem + 0.2vw);
+  /* font-size: calc(1.375rem + 0.2vw);
   margin-bottom: 5vh;
 }
 
@@ -66,12 +66,12 @@ ul {
 .social {
   color: black;
   padding-top: 8%;
-}
+} */
 
 /*==============================
 MOBILE/BURGER CSS
 ===============================*/
-.mobile-header {
+/* .mobile-header {
   display: none;
 }
 
@@ -86,7 +86,7 @@ MOBILE/BURGER CSS
   background-color: black;
   margin: 5px;
   transition: all 0.3s ease-in;
-}
+} */
 
 /*==============================
   MAIN CONTENT
@@ -127,14 +127,14 @@ MOBILE/BURGER CSS
 /*==============================
   EMPTY SPACE ON THE RIGHT
 ==============================*/
-.space-right {
+/* .space-right {
   width: 20%;
-}
+} */
 
 /*==============================
   RESPONSIVE DESIGN: TABLET
 ==============================*/
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   html {
     font-size: 13px;
     overflow-x: hidden;
@@ -167,12 +167,12 @@ MOBILE/BURGER CSS
 
   .title {
     margin-top: 4%;
-  }
+  } */
 
   /*==============================
   RESPONSIVE MOBILE/BURGER
 ==============================*/
-  .burger {
+  /* .burger {
     display: block;
   }
 
@@ -233,12 +233,12 @@ MOBILE/BURGER CSS
     transform: rotate(45deg) translate(-5px, -6px);
     background-color: #fff9e5;
   }
-}
+} */
 
 /*==============================
   RESPONSIVE DESIGN: PHONE
 ==============================*/
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
   .container {
     width: 90%;
     margin-top: 4vh;
@@ -261,4 +261,4 @@ MOBILE/BURGER CSS
   .text {
     padding: 0 8% 0 8%;
   }
-}
+} */
