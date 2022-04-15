@@ -91,7 +91,7 @@ MOBILE/BURGER CSS
 } */
 
 /*==============================
-  MAIN CONTENT
+  11s: HERO PICTURE
 ==============================*/
 .main-container {
   width: 100%;
@@ -112,22 +112,48 @@ MOBILE/BURGER CSS
   height: 100%;
 }
 
-.text {
+/*==============================
+  11s: NAVIGATION
+==============================*/
+
+/*==============================
+  11s: CATERING
+==============================*/
+
+.catering-picture img {
+  width: 50%;
+  max-width: 50%;
+  height: 50%;
+}
+
+.catering {
   margin-top: 4%;
   text-align: justify;
   font-size: 1rem;
+  /* Change me, use flex display etc. for laying out divs in catering && contact */
+  float: right;
 }
 
-.text-link {
+.catering-link {
   color: white;
 }
 
-.text-link:hover {
+.catering-link:hover {
   color: gray;
 }
 
+/*==============================
+  11s: CONTACT / VISIT
+==============================*/
+
 .contact {
   color: gray;
+}
+
+.branding {
+  color: orchid;
+  /* Change me, use flex display etc. for laying out divs in catering && contact */
+  float: right;
 }
 
 /*==============================
