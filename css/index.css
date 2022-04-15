@@ -1,9 +1,10 @@
 html {
-  background: #fdf2e0;
+  background: #001440;
   font-size: 16px;
   margin: 0;
   padding: 0;
   padding-bottom: 4vh;
+  
 }
 
 .container {
@@ -13,6 +14,7 @@ html {
   margin-top: 5vh;
   font-family: Georgia, "Times New Roman", serif;
   display: flex;
+  color: #fdf2e0;
 }
 
 /*==============================
@@ -117,7 +119,7 @@ MOBILE/BURGER CSS
 }
 
 .text-link {
-  color: black;
+  color: white;
 }
 
 .text-link:hover {
