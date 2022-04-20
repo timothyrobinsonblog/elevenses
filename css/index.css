@@ -129,11 +129,26 @@ MOBILE/BURGER CSS
 ==============================*/
 
 svg {
-  fill: currentColor;
+  fill: goldenrod;
   height: auto;
-  max-width: 66vmin;
+  max-width: 35vmin;
   transform-origin: center;
-  width: 66%;
+  width: 35%;
+}
+
+.menu-link {
+  fill: purple;
+  fill: #DF362D;
+}
+
+.catering-link {
+  fill: yellow;
+  fill: #FF4500;
+}
+
+.visit-link {
+  fill: green;
+  fill: #FF8300;
 }
 
 /*==============================
