@@ -174,14 +174,12 @@ svg {
 
 .catering {
   margin-top: 4%;
-  text-align: justify;
-  font-size: 1rem;
   /* Change me, use flex display etc. for laying out divs in catering && contact */
   /* float: right; */
   /* FlEX VS GRID */
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .catering-picture {
@@ -190,15 +188,17 @@ svg {
   /* padding: 6% 1vw 0 0; */
 }
 
-/* .catering-picture img {
-  width: 50%;
-  max-width: 50%;
-  height: 50%;
-} */
+.catering-picture img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
 
 .catering-text {
   /* FLEX VS GRID */
   width: 45%;
+  text-align: justify;
+  font-size: 1rem;
 }
 
 .catering-link {
@@ -229,20 +229,22 @@ svg {
   /* FlEX VS GRID */
   width: 100%;
   display: flex;
-  justify-content: space-between;  
+  /* justify-content: space-between;   */
 }
 
 .contact {
   color: gray;
   font-family: 'Roboto Mono', monospace;
-  width: 50%;
-}
+  text-align: right;
+  width: 65%;
+} 
 
 .branding {
   color: orchid;
   /* Change me, use flex display etc. for laying out divs in catering && contact */
   /* float: right; */
-  width: 50%;
+  width: 35%;
+  text-align: left;
 }
 
 /*==============================
