@@ -229,7 +229,9 @@ svg {
   /* FlEX VS GRID */
   width: 100%;
   display: flex;
-  /* justify-content: space-between;   */
+  /* SETTING GAPS BETWEEN ITEMS IN FLEXBOX - DECIDE ON METHOD (set @ parent or child) WHEN ITEMS HAVE BEEN PLACED PROPERLY: */
+  /* USE .THIS FOR child GAP SETTING, control via div width %: justify-content: space-between; */ 
+  /* USE .THIS FOR parent GAP SETTING: column-gap: 5%; */
 }
 
 .contact {
