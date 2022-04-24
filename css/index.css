@@ -225,15 +225,24 @@ svg {
   11s: CONTACT / VISIT
 ==============================*/
 
+.footer {
+  /* FlEX VS GRID */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;  
+}
+
 .contact {
   color: gray;
   font-family: 'Roboto Mono', monospace;
+  width: 50%;
 }
 
 .branding {
   color: orchid;
   /* Change me, use flex display etc. for laying out divs in catering && contact */
-  float: right;
+  /* float: right; */
+  width: 50%;
 }
 
 /*==============================
