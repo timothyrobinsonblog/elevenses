@@ -128,19 +128,17 @@ MOBILE/BURGER CSS
   position: relative;
   top: 0;
   left: 0;
-  /* z-index: 1; */
 }
 
 .hero-button-overlay img {
-  width: 10%;
-  height: 10%;
+  width: 7%;
+  height: 7%;
   max-width: 100%;
   position: absolute;
-  top: 89%;
-  left: 95%;
+  top: 88%;
+  left: 94%;
   transform: translate(-100%, -100%);
-  background-color: #DF362D;
-  /* z-index: 2; */
+  background-color: skyblue;
 }
 
 /*==============================
