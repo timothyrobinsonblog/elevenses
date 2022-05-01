@@ -86,25 +86,45 @@
 
       <section class="picture">
         <picture>
-          <source media="(min-width: 993px)" srcset="img/portrait_sydney_1500.png" />
+          <source media="(min-width: 993px)" srcset="img/portrait_sydney_1500_V1.png" />
           <source media="(min-width: 577px)" srcset="img/portrait_sydney_1500.jpg" />
           <source media="(max-width: 576px)" srcset="img/portrait_sydney_750.jpg" />
           <img src="img/portrait_sydney_1500.jpg" alt="picture" />
         </picture>
 
-        <div class="hero-button-overlay">
-          <img src="img/full-screen-round.png" alt="picture" />
-        </div>
+        <!-- <div class="elevenses-definition">
+          * / elevenses: <br>
+          plural noun / 
+          informal / british <br>
+          a short break for
+          light refreshments,
+          usually with tea or
+          coffee, taken
+          at about eleven
+          o'clock in the
+          morning.
+        </div> -->
+
+        <!-- <div class="hero-button-overlay"></div> -->
+        <!-- class="fa fa-angle-double-down" -->
+
+        <!-- class="bounce" -->
+
+          <div class="hero-button-arrow">
+            <a href="#navbar"><img class="bounce2" src="img/full-screen-round.png" alt="picture"/></a>
+          </div>
+
       </section>
 
 <!--==============================
   11s: NAVIGATION
 ==============================-->
 
-      <section class="title">
+      <!-- <section class="title">
         Menu Catering Visit / Contact
-      </section>
+      </section> -->
 
+    <section id="navbar" class="navbar">
       <svg viewBox="0 0 100 100" width="100" height="100">
         <defs>
           <path id="circle"
@@ -114,20 +134,25 @@
               a 37,37 0 1,1 74,0
               a 37,37 0 1,1 -74,0"/>
         </defs>
-        <text font-size="17">
+        <text font-size="15">
           <textPath xlink:href="#circle">
-            
-            <a href="https://www.dhamma.org" class="menu-link">Menu *</a>
 
-            <a href="#div_id" class="catering-link">catering</a>
-            
-            * 
-            
-            <a href="https://www.dhamma.org" class="visit-link"> Visit & contact</a>
+            <a href="other/elevenses_menu.pdf" class="menu-link">menu</a>
+
+            <a class="dots-one">**</a> 
+
+            <a href="#catering" class="catering-link">catering</a>
+
+            <a class="dots-two">**</a>    
+
+            <a href="#visit" class="visit-link"> visit & contact</a>
+
+            <a class="dots-three">***</a>
 
           </textPath>
         </text>
       </svg>
+    </section>
 
       <!-- <section class="title-test">
         <div class="title-test-menu">Menu</div> <p></p>
@@ -139,8 +164,7 @@
   11s: CATERING
 ==============================-->
 
-<div id="div_id"></div>
-      <article class="catering">
+      <article id="catering" class="catering">
 
         <!-- <p>
           Hello world. I'm a developer, designer, photographer, and writer. I hold degrees in philosophy, English, and finance. My
@@ -199,8 +223,8 @@
     <!-- ==============================
   11s: CONTACT / VISIT
 ==============================-->
-      
-      <section class="footer">
+    
+      <section id="visit" class="footer">
         
         <div class="contact"> 
           Phone: 000
