@@ -330,9 +330,21 @@ svg {
 }
 
 .catering-picture img {
-  width: 100%;
+  width: 80%;
   max-width: 100%;
   height: 100%;
+}
+
+/* FlEX VS GRID */
+
+.project-picture {
+  max-width: 100%;
+  display: block;
+}
+
+.project-picture:hover {
+  /* opacity: 0.5; */
+  transform: scale(1.1);
 }
 
 .catering-text {
@@ -351,17 +363,6 @@ svg {
 
 .catering-link:hover {
   color: gray;
-}
-
-/* FlEX VS GRID */
-
-.project-picture {
-  max-width: 100%;
-  display: block;
-}
-
-.project-picture:hover {
-  opacity: 0.95;
 }
 
 
