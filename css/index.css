@@ -120,6 +120,7 @@ MOBILE/BURGER CSS
   position: relative;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .picture img {
@@ -236,17 +237,46 @@ MOBILE/BURGER CSS
   11s: NAVIGATION
 ==============================*/
 
-.navbar {
-  display: flex;
-  justify-content: center;
+
+/* .container2 {
+  display: grid;
+  grid-column-gap: 1.5vw;
+  grid-row-gap: 2.5vh;
+  grid-template-columns: repeat(2, 1fr);
+} */
+
+.balancing-element1 {
+  /* transform: rotate(90deg); */
+  width: 40%;
+  margin: 0 -5% 0 5%;   
 }
+
+.navbar {
+  /* display: flex; */
+  /* align-content: start; */
+  /* align-items: end; */
+  z-index: 2;
+  /* justify-content: start;
+  align-items: flex-start; */
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 
 svg {
   /* fill: goldenrod; */
   height: auto;
+  /* display: flex; */
   max-width: 35vmin;
+  align-self: flex-start;
+  /* align-items: center;
+  align-content: flex-end;
+  justify-content: end;
+  justify-items: end;
+  justify-self: end; */
   /* transform-origin: center; */
-  width: 100%;
+  width: 60%;
+  margin: 0 0 0 5%;
 }
 
 .menu-link {
@@ -297,6 +327,10 @@ svg {
   fill: plum;
 }
 
+
+
+
+
 /* .title-test {
   float: right;
   font-size: 60px;
@@ -324,20 +358,27 @@ svg {
   /* float: right; */
   /* FlEX VS GRID */
   width: 100%;
-  display: flex;
+  /* display: flex; */
   /* justify-content: space-between; */
 }
 
 .catering-picture {
   /* FlEX VS GRID */
-  width: 55%;
+  display: flex;
+  justify-content: flex-end;
   /* padding: 6% 1vw 0 0; */
+  padding: 0 5% 0 0;  
+
 }
 
 .catering-picture img {
   width: 80%;
   max-width: 100%;
   height: 100%;
+  float: right;
+  justify-content: end;
+  justify-items: end;
+  justify-self: end;
 }
 
 /* FlEX VS GRID */
@@ -354,12 +395,17 @@ svg {
 
 .catering-text {
   /* FLEX VS GRID */
-  width: 45%;
+  width: 35%;
   text-align: justify;
   font-size: 1rem;
-  border: 2px solid #fdf2e0;
+  /* border: 2px solid #fdf2e0; */
   border-radius: 20px;
   padding: 1% 1% 1% 1%;
+  padding: 5% 5% 5% 0;  
+  justify-content: end;
+  justify-items: end;
+  justify-self: end;
+  float: right;
 }
 
 .catering-link {
@@ -382,13 +428,22 @@ svg {
   /* SETTING GAPS BETWEEN ITEMS IN FLEXBOX - DECIDE ON METHOD (set @ parent or child) WHEN ITEMS HAVE BEEN PLACED PROPERLY: */
   /* USE .THIS FOR child GAP SETTING, control via div width %: justify-content: space-between; */ 
   /* USE .THIS FOR parent GAP SETTING: column-gap: 5%; */
+  justify-content: end;
+  justify-items: end;
+  justify-self: end;
+  float: right;
 }
 
 .contact {
   color: gray;
   font-family: 'Roboto Mono', monospace;
-  text-align: right;
-  width: 65%;
+  text-align: left;
+  width: 35%;
+  padding: 0 5% 0 0;  
+  justify-content: end;
+  justify-items: end;
+  justify-self: end;
+  float: right;
 } 
 
 .branding {
@@ -399,23 +454,52 @@ svg {
   text-align: left;
 }
 
-* {
+
+
+.branding-text {
+  display: flex;
+  justify-content: end;
+  justify-self: flex-end;
+  justify-items: end;
+  align-items: end;
+  align-self: flex-end;
+  align-content: flex-end;
+  width: 100%;
+  }
+
+/* * {
   margin: 0;
   padding: 0;
+} */
+
+.links-text {
+  width: 30%;
+  text-align: right;
+  /* display: block; */
+  color: orangered;
+  font-size: 3rem;
+  padding: 0 5% 0 0;
+
 }
 
 .neon-text2 {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  justify-self: flex-end;
+  justify-items: end;
+  align-items: end;
+  align-self: flex-end;
+  align-content: flex-end;
+  width: 70%;
+  padding: 5% 0 0 0;
 }
 
 .line {
   width: 100vw;
 }
 .left, .right {
-  width: 50vw;
+  width: 50%;
   overflow: hidden;
   display: inline-block;
 }
@@ -439,10 +523,15 @@ svg {
 span {
   display: inline-block;
   font-family: 'Glamour Absolute', regular;
-  font-size: 10vw;
+  font-size: 4.5rem;
   /* text-transform: uppercase; */
   line-height: .8;
   transition: ease-out .6s;
+}
+
+#balancing-element2 {
+  width: 30%;
+  padding: 0 25% 0 0;
 }
 
 /* NEON TEXT */
