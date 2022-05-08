@@ -4,6 +4,27 @@ html {
   margin: 0;
   padding: 0;
   padding-bottom: 4vh; 
+  /* ADD NOISE BACKGROUND */
+  background-image: url("../img/noise_v1_3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0 auto;
+  /* background-color: black; */
+  width: 100vw;
+  width: 100%;
+  /* Changes you made on May-6th causing problems with background. See TM/Github backups. */
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100vw;
+  width: 100%;
+  max-width: 1750px;
+  overflow: hidden;
 }
 
 /* @font-face {
@@ -20,8 +41,11 @@ html {
 
 .container {
   margin: 0 auto;
+  padding: 0 auto;
+  width: 100vw;
   width: 100%;
-  max-width: 1500px;
+  /* max-width: 1500px; */
+  max-width: 1750px;
   /* margin-top: 5vh; */
   /* font-family: Georgia, "Times New Roman", serif; */
   display: flex;
@@ -156,8 +180,9 @@ MOBILE/BURGER CSS
   height: 7%;
   max-width: 100%;
   position: absolute;
-  top: 88%;
-  left: 94%;
+  /* Originally 88(top) && 94(left) */
+  top: 75%;
+  left: 88%;
   transform: translate(-100%, -100%);
   opacity: 80%;
   /* background-color: skyblue; */
@@ -248,7 +273,7 @@ MOBILE/BURGER CSS
 .balancing-element1 {
   /* transform: rotate(90deg); */
   width: 40%;
-  margin: 0 -5% 0 5%;   
+  margin: 0 -5% 3% 5%;   
 }
 
 .navbar {
@@ -353,7 +378,7 @@ svg {
 ==============================*/
 
 .catering {
-  margin-top: 4%;
+  margin-top: 2.5%;
   /* Change me, use flex display etc. for laying out divs in catering && contact */
   /* float: right; */
   /* FlEX VS GRID */
@@ -390,10 +415,14 @@ svg {
 
 .project-picture:hover {
   /* opacity: 0.5; */
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
+  transform: rotate(180deg);
+  /* transform: skew(25deg, 25deg); */
 }
 
 .catering-text {
+    color: gray;
+  font-family: 'Roboto Mono', monospace;
   /* FLEX VS GRID */
   width: 35%;
   text-align: justify;
@@ -438,13 +467,37 @@ svg {
   color: gray;
   font-family: 'Roboto Mono', monospace;
   text-align: left;
-  width: 35%;
+  width: 65%;
   padding: 0 5% 0 0;  
   justify-content: end;
   justify-items: end;
   justify-self: end;
   float: right;
 } 
+
+.social {
+  font-size: 1.625rem;
+  color: gray;
+  padding: 0.5% 0 1% 0;
+}
+
+.empty-space {
+  color: #DF362D;
+  background-color: #DF362D;
+  /* height: 1vh; */
+}
+
+.balancing-element2 {
+  width: 35%;
+  padding: 0 25% 0 0;
+  margin: 0 5vw 0 -5vw;
+  justify-content: flex-start;
+  justify-self: flex-start;
+  justify-items: flex-start;
+  align-items: flex-start;
+  align-self: flex-start;
+  align-content: flex-start;
+}
 
 .branding {
   color: orchid;
@@ -453,8 +506,6 @@ svg {
   width: 35%;
   text-align: left;
 }
-
-
 
 .branding-text {
   display: flex;
@@ -473,13 +524,13 @@ svg {
 } */
 
 .links-text {
-  width: 30%;
+  width: 100%;
   text-align: right;
   /* display: block; */
   color: orangered;
   font-size: 3rem;
-  padding: 0 5% 0 0;
-
+  padding: 0 5% 3% 0;
+ float: right;
 }
 
 .neon-text2 {
@@ -492,17 +543,21 @@ svg {
   align-self: flex-end;
   align-content: flex-end;
   width: 70%;
-  padding: 5% 0 0 0;
+  padding: 5% 10% 0 7.5%;
+  max-width: 100%;
+  /* max-width:max-content; */
 }
 
 .line {
   width: 100vw;
 }
+
 .left, .right {
-  width: 50%;
+  width: 50vw;
   overflow: hidden;
   display: inline-block;
 }
+
 .left {
   color: orangered;
   transform: skew(0deg, -15deg);
@@ -511,15 +566,18 @@ svg {
   color: blue;
   transform: skew(0deg, 15deg);
 }
+
 .left .content {
   width: 100vw;
   text-align: center;
 }
+
 .right .content {
   width: 100vw;
   text-align: center;
   transform: translate(-50vw);
 }
+
 span {
   display: inline-block;
   font-family: 'Glamour Absolute', regular;
@@ -527,11 +585,6 @@ span {
   /* text-transform: uppercase; */
   line-height: .8;
   transition: ease-out .6s;
-}
-
-#balancing-element2 {
-  width: 30%;
-  padding: 0 25% 0 0;
 }
 
 /* NEON TEXT */
