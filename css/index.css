@@ -482,6 +482,7 @@ svg {
 
 .contact {
   color: gray;
+  color: red;
   font-family: 'Roboto Mono', monospace;
   text-align: left;
   width: 65%;
