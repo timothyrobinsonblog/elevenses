@@ -27,18 +27,6 @@ body {
   overflow: hidden;
 }
 
-/* @font-face {
-  font-family: 'Roboto Mono', monospace;
-  src: url(fonts/roboto-mono-v12-latin-regular.woff2) format('woff2'),
-       url(fonts/roboto-mono-v12-latin-regular.woff) format('woff'),
-       url(fonts/roboto-mono-v12-latin-regular.ttf) format('truetype');
-} */
-
-/* @font-face {
-  font-family: 'Glamour Absolute', regular;
-  src: url(fonts/GlamourAbsolute_Regular.ttf) format("truetype");     
-} */
-
 .container {
   margin: 0 auto;
   padding: 0 auto;
@@ -53,82 +41,32 @@ body {
   font-family: 'Glamour Absolute', regular;
 }
 
-/*==============================
-  NAVIGATION BAR
-  ==============================*/
-/* .space-left {
-  width: 20%;
-  flex-direction: column;
+.main-container {
+  width: 100%;
 }
 
-.nav-container {
-  float: right;
-  margin: 0 20% 0 2vw;
+/* 
+
+@font-face {
+  font-family: 'Roboto Mono', monospace;
+  src: url(fonts/roboto-mono-v12-latin-regular.woff2) format('woff2'),
+       url(fonts/roboto-mono-v12-latin-regular.woff) format('woff'),
+       url(fonts/roboto-mono-v12-latin-regular.ttf) format('truetype');
 }
 
-.nav-logo { */
-  /* Scalable with min size of 22px. Used to be 26px. */
-  /* font-size: calc(1.375rem + 0.2vw);
-  margin-bottom: 5vh;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-.nav-links li {
-  list-style: none;
-  padding: 1.5% 0 1.5% 0;
-}
-
-.nav-links-text {
-  color: black;
-  text-decoration: none;
-  font-size: 0.875rem;
-}
-
-.nav-links-text:hover {
-  font-weight: bold;
-}
-
-#current-page {
-  border-bottom: 1px solid #000;
-  padding-bottom: 1px;
-}
-
-#current-page:hover {
-  font-weight: normal;
+@font-face {
+  font-family: 'Glamour Absolute', regular;
+  src: url(fonts/GlamourAbsolute_Regular.ttf) format("truetype");     
 }
 
 .social {
   color: black;
   padding-top: 8%;
-} */
+} 
 
-/*==============================
-MOBILE/BURGER CSS
-===============================*/
-/* .mobile-header {
-  display: none;
-}
+transition: all 0.3s ease-in;
 
-.burger {
-  display: none;
-  cursor: pointer;
-}
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: black;
-  margin: 5px;
-  transition: all 0.3s ease-in;
-} */
-
-.main-container {
-  width: 100%;
-}
+ */
 
 /*==============================
   11s: HERO PICTURE
@@ -410,6 +348,8 @@ svg {
 .project-picture {
   max-width: 100%;
   display: block;
+  cursor: zoom-in;
+  /* cursor: pointer; */
 }
 
 .project-picture:hover {
