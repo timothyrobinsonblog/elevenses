@@ -47,6 +47,11 @@ body {
 
 /* 
 
+RESUME HERE: TEST RALEWAY ON SITE && MOVE CSS TO THINGS FONT TASK.
+
+@import url('https://fonts.googleapis.com/css?family=Raleway'); 
+font-family: 'Raleway', sans-serif;
+
 @font-face {
   font-family: 'Roboto Mono', monospace;
   src: url(fonts/roboto-mono-v12-latin-regular.woff2) format('woff2'),
@@ -55,26 +60,10 @@ body {
 }
 
 @font-face {
-  font-family: 'Glamour Absolute', regular;
+  font-family: X;
   src: url(fonts/GlamourAbsolute_Regular.ttf) format("truetype");     
 }
 
-.social {
-  color: black;
-  padding-top: 8%;
-} 
-
-transition: all 0.3s ease-in;
-font-size: 1.25rem / 3vh;
-line-height:60px;
-text-rendering: auto;
--webkit-font-smoothing: antialiased;
--moz-animation: bounce 2s infinite;
--o-animation: bounce 2s infinite;
--ms-border-radius:50%;
-.fa-angle-double-down:before {content: "\f107";}
-max-width: 35vmin;
-transform-origin: center;
 fill: orangered;
 fill: goldenrod;
 fill: plum;
@@ -85,12 +74,10 @@ fill: #FF4500;
 fill: #DF362D;
 fill: #FF8300;
 
- */
 
 /*==============================
   11s: HERO PICTURE
 ==============================*/
-
 
 .picture {
   width: 100%;
@@ -282,6 +269,13 @@ fill: #FF8300;
   font-size: 1.625rem;
   color: gray;
   padding: 0.5% 0 1% 0;
+  /* 
+  color: black;
+  padding-top: 8%;
+  color: #fff9e5;
+  padding: 2% 0 5vh 0;
+  font-size: 1.75rem;
+  */
 }
 
 .empty-space {
@@ -319,7 +313,8 @@ fill: #FF8300;
   align-self: flex-end;
   align-content: flex-end;
   width: 100%;
-  }
+  /* justify-content: center; */
+}
 
 /* * {
   margin: 0;
@@ -390,187 +385,10 @@ span {
   float: right;
 }
 
-/* NEON TEXT */
-
-/* @import url('https://fonts.googleapis.com/css?family=Raleway'); */
-/* body {
-  background-color:black;
-} */
-
-/* .branding-text {
-  display: flex;
-  justify-content: center;
-} */
-
-/* .neon { */
-  /* position:absolute; */
-  /* width:50%; */
-  /* left:50%; */
-  /* margin: -50px 0 0 -150px; */
-  /* text-align:center;
-  border:1px solid #1086e8;
-  padding: 2%;
- 
-  top:150px;
-  border-radius:20px;
-  text-align: left;
-
-  animation: border-flicker 2s linear infinite;
-}
-
-.neon-text {
-  color:#FF00E6; */
-  /* font-family: 'Raleway', sans-serif; */
-  /* font-family: 'Glamour Absolute', regular;
-  font-size: 1.5rem;
-  letter-spacing:10px;
-  animation: text-flicker 3s linear infinite;
-}
-
-#offset {
-  animation: letter-flicker 2s linear infinite;
-}
-
-@keyframes text-flicker {
-  0% {
-    opacity:0.1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  
-  2% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  8% {
-    opacity:0.1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  9% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  12% {
-    opacity:0.1;
-    text-shadow: 0px 0px rgba(242, 22, 22, 1);
-  }
-  20% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-  }
-  25% {
-    opacity:0.3;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-  }
-  30% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-  }
-  
-  70% {
-    opacity:0.7;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-  }
-  
-  72% {
-    opacity:0.2;
-    text-shadow:0px 0px 29px rgba(242, 22, 22, 1)
-  }
-  
-  77% {
-    opacity:.9;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-  }
-  100% {
-    opacity:.9;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
-  }
-}
-
-@keyframes border-flicker {
-  0% {
-    opacity:0.1;
-    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
--moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-  }
-  2% {
-    opacity:1;
-    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
--moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-  }
-  4% {
-    opacity:0.1;
-    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
--moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-  }
-  
-  8% {
-    opacity:1;
-    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
--moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-  }
-  70% {
-    opacity:0.7;
-    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
--moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-  }
-  100% {
-    opacity:1;
-    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
--moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
-  }
-}
-
-@keyframes letter-flicker {
-  0% {
-    opacity:0.1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  2% {
-    opacity:0.1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  4% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  
-  
-  19% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  21% {
-    opacity:0.1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  23% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  
-  80% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  83% {
-    opacity:0.4;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-  87% {
-    opacity:1;
-    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
-  }
-} */
-
 /*==============================
   RESPONSIVE DESIGN: TABLET
 ==============================*/
+
 /* @media screen and (max-width: 992px) {
   html {
     font-size: 13px;
@@ -604,77 +422,13 @@ box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
 
   .title {
     margin-top: 4%;
-  } */
-
-  /*==============================
-  RESPONSIVE MOBILE/BURGER
-==============================*/
-  /* .burger {
-    display: block;
-  }
-
-  .nav-logo {
-    display: none;
-  }
-
-  .nav-links {
-    position: fixed;
-    right: 0px;
-    height: 100%;
-    top: 0;
-    background-color: #a51f26;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-    opacity: 0.95;
-  }
-
-  .nav-links li {
-    opacity: 1;
-  }
-
-  .nav-links-text {
-    font-size: 1.75rem;
-    color: #fff9e5;
-  }
-
-  #current-page {
-    border-bottom: 2px solid #fff9e5;
-    padding-bottom: 1px;
-  }
-
-  .social {
-    color: #fff9e5;
-    padding: 2% 0 5vh 0;
-    font-size: 1.75rem;
-  }
-
-  .nav-active {
-    transform: translateX(0%);
-  }
-
-  .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-    background-color: #fff9e5;
-  }
-
-  .toggle .line2 {
-    opacity: 0;
-  }
-
-  .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-    background-color: #fff9e5;
-  }
+  } 
 } */
 
 /*==============================
   RESPONSIVE DESIGN: PHONE
 ==============================*/
+
 /* @media screen and (max-width: 576px) {
   .container {
     width: 90%;
