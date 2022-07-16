@@ -4,17 +4,14 @@ html {
   margin: 0;
   padding: 0;
   padding-bottom: 4vh; 
-  /* ADD NOISE BACKGROUND */
   background-image: url("../img/noise_v1_3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   margin: 0 auto;
-  /* background-color: black; */
   width: 100vw;
   width: 100%;
-  /* Changes you made on May-6th causing problems with background. See TM/Github backups. */
   overflow-x: hidden;
 }
 
@@ -30,50 +27,20 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 auto;
+  /* margin-top: 5vh; */
   width: 100vw;
   width: 100%;
-  /* max-width: 1500px; */
   max-width: 1750px;
-  /* margin-top: 5vh; */
-  /* font-family: Georgia, "Times New Roman", serif; */
+  /* max-width: 1500px; */
   display: flex;
   color: #fdf2e0;
   font-family: 'Glamour Absolute', regular;
+  /* font-family: Georgia, "Times New Roman", serif; */
 }
 
 .main-container {
   width: 100%;
 }
-
-/* 
-
-RESUME HERE: TEST RALEWAY ON SITE && MOVE CSS TO THINGS FONT TASK.
-
-@import url('https://fonts.googleapis.com/css?family=Raleway'); 
-font-family: 'Raleway', sans-serif;
-
-@font-face {
-  font-family: 'Roboto Mono', monospace;
-  src: url(fonts/roboto-mono-v12-latin-regular.woff2) format('woff2'),
-       url(fonts/roboto-mono-v12-latin-regular.woff) format('woff'),
-       url(fonts/roboto-mono-v12-latin-regular.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: X;
-  src: url(fonts/GlamourAbsolute_Regular.ttf) format("truetype");     
-}
-
-fill: orangered;
-fill: goldenrod;
-fill: plum;
-fill: purple;
-fill: green;
-fill: yellow;
-fill: #FF4500;
-fill: #DF362D;
-fill: #FF8300;
-
 
 /*==============================
   11s: HERO PICTURE
@@ -96,25 +63,18 @@ fill: #FF8300;
   left: 0;
 }
 
-.hero-button-arrow {
-  /* opacity: 20%;
-  width: 17%;
-  height: 17%; */
-}
-
 .hero-button-arrow img {
-  /* border-radius: 50%;
-  background-color: red; */
   width: 7%;
   height: 7%;
   max-width: 100%;
   position: absolute;
-  /* Originally 88(top) && 94(left) */
   top: 75%;
   left: 88%;
+  /* Originally 88(top) && 94(left) */
   transform: translate(-100%, -100%);
   opacity: 80%;
-  /* background-color: skyblue; */
+  /* border-radius: 50%;
+  border: 5px solid; */
 }
 
 .bounce2 {
@@ -132,20 +92,8 @@ fill: #FF8300;
 ==============================*/
 
 .balancing-element1 {
-  /* transform: rotate(90deg); */
   width: 40%;
   margin: 0 -5% 3% 5%;   
-}
-
-.navbar {
-  /* display: flex; */
-  /* align-content: start; */
-  /* align-items: end; */
-  z-index: 2;
-  /* justify-content: start;
-  align-items: flex-start; */
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 /*==============================
@@ -153,20 +101,14 @@ fill: #FF8300;
 ==============================*/
 
 .catering {
+  /* ? flex vs. grid vs. float ? */
   margin-top: 2.5%;
-  /* Change me, use flex display etc. for laying out divs in catering && contact */
-  /* float: right; */
-  /* FlEX VS GRID */
   width: 100%;
-  /* display: flex; */
-  /* justify-content: space-between; */
 }
 
 .catering-picture {
-  /* FlEX VS GRID */
   display: flex;
   justify-content: flex-end;
-  /* padding: 6% 1vw 0 0; */
   padding: 0 5% 0 0;
 }
 
@@ -180,36 +122,32 @@ fill: #FF8300;
   justify-self: end;
 }
 
-/* FlEX VS GRID */
-
 .project-picture {
   max-width: 100%;
   display: block;
   cursor: zoom-in;
-  /* cursor: pointer; */
 }
 
 .project-picture:hover {
-  /* opacity: 0.5; */
-  /* transform: scale(1.1); */
   transform: rotate(180deg);
   /* transform: skew(25deg, 25deg); */
+  /* transform: scale(1.1); */
+  /* opacity: 0.1; */
 }
 
 .catering-text {
-    color: gray;
+  color: gray;
   font-family: 'Roboto Mono', monospace;
-  /* FLEX VS GRID */
   width: 35%;
   text-align: justify;
   font-size: 1rem;
-  /* border: 2px solid #fdf2e0; */
-  border-radius: 20px;
   padding: 4% 5% 3% 0;  
   justify-content: end;
   justify-items: end;
   justify-self: end;
   float: right;
+  /* border: 2px solid #fdf2e0;
+  border-radius: 20px; */
 }
 
 #we-cater-text {
@@ -219,19 +157,16 @@ fill: #FF8300;
 
 #cater-text-highlights {
   color: #DF362D;
-  /* color: gray; */
   font-size: 1.25rem;
   font-family: 'Glamour Absolute', regular;
 }
 
 #cater-text-highlights:hover {
-  /* color: gray; */
   opacity: 60%;
 }
 
 #cater-text-highlights2 {
   color: #DF362D;
-  /* color: gray; */
   font-size: 1.25rem;
   font-family: 'Glamour Absolute', regular;
 }
@@ -241,16 +176,15 @@ fill: #FF8300;
 ==============================*/
 
 .footer {
-  /* FlEX VS GRID */
+  /* ? flex vs. grid vs. float ? */
   width: 100%;
   display: flex;
-  /* SETTING GAPS BETWEEN ITEMS IN FLEXBOX - DECIDE ON METHOD (set @ parent or child) WHEN ITEMS HAVE BEEN PLACED PROPERLY: */
-  /* USE .THIS FOR child GAP SETTING, control via div width %: justify-content: space-between; */ 
-  /* USE .THIS FOR parent GAP SETTING: column-gap: 5%; */
   justify-content: end;
   justify-items: end;
   justify-self: end;
   float: right;
+  /* column-gap: 5%; */
+  /* flex-wrap: wrap; */
 }
 
 .contact {
@@ -266,16 +200,11 @@ fill: #FF8300;
 } 
 
 .social {
-  font-size: 1.625rem;
   color: gray;
   padding: 0.5% 0 1% 0;
-  /* 
-  color: black;
-  padding-top: 8%;
-  color: #fff9e5;
-  padding: 2% 0 5vh 0;
-  font-size: 1.75rem;
-  */
+  font-size: 1.625rem;
+  /* font-size: 1.75rem; */
+
 }
 
 .empty-space {
@@ -296,15 +225,8 @@ fill: #FF8300;
   align-content: flex-start;
 }
 
-.branding {
-  color: orchid;
-  /* Change me, use flex display etc. for laying out divs in catering && contact */
-  /* float: right; */
-  width: 35%;
-  text-align: left;
-}
-
 .branding-text {
+  /* ? flex vs. grid vs. float ? */
   display: flex;
   justify-content: end;
   justify-self: flex-end;
@@ -313,16 +235,9 @@ fill: #FF8300;
   align-self: flex-end;
   align-content: flex-end;
   width: 100%;
-  /* justify-content: center; */
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-} */
-
 .neon-text2 {
-  /* height: 100vh; */
   display: flex;
   justify-content: flex-end;
   justify-self: flex-end;
@@ -333,7 +248,7 @@ fill: #FF8300;
   width: 70%;
   padding: 5% 10% 0 7.5%;
   max-width: 100%;
-  /* max-width:max-content; */
+  /* max-width: max-content; */
 }
 
 .line {
@@ -370,15 +285,14 @@ span {
   display: inline-block;
   font-family: 'Glamour Absolute', regular;
   font-size: 4.5rem;
-  /* text-transform: uppercase; */
   line-height: .8;
   transition: ease-out .6s;
+  /* text-transform: uppercase; */
 }
 
 .links-text {
   width: 100%;
   text-align: right;
-  /* display: block; */
   color: orangered;
   font-size: 3rem;
   padding: 0 5% 3% 0;
@@ -453,3 +367,14 @@ span {
     padding: 0 8% 0 8%;
   }
 } */
+
+/*==============================
+HTML LAYOUT TESTING ONLY
+==============================*/
+/*
+* {
+  border: 1px solid red;
+  border: 1px solid blue;
+  border: 1px solid teal;
+} 
+*/
